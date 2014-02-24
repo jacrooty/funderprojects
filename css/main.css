@@ -1,3 +1,5 @@
+
+
 p.msg2u {
  color: #FAE607;
  font-weight: 200;
@@ -739,7 +741,7 @@ input[type="submit"]:focus {
 }
 .wp-email-capture-widget input[type="submit"] {
   border: none;
-  background-color: #1d76e4;
+  background-color: #e65720;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
@@ -908,7 +910,7 @@ input[type="submit"]:focus {
   line-height: 24px;
   font-weight: bold;
   color: #ffffff;
-  background-color: #cf1c22 ;
+  background-color: #e65720 ;
   padding: 21px 24px 23px 20px;
 }
 .donate-now a:hover {
@@ -942,7 +944,7 @@ input[type="submit"]:focus {
 .main-menu ul li a {
   display: inline-block;
   font-size: 14px;
-  color: #898ba2;
+  color: #e65720;
   text-decoration: none;
   margin: 0 ;
   padding: 23px 15px 22px;
@@ -990,7 +992,7 @@ input[type="submit"]:focus {
   margin: 0 ;
 }
 .quote blockquote p {
-  color: #d9dae9;
+  color: #e65720;
   font-family: 'Noto Serif', Georgia, "Times New Roman", Times, serif;
   font-style: italic;
   font-size: 24px;
@@ -1062,7 +1064,7 @@ input[type="submit"]:focus {
   display: block;
 }
 .home-flexslider .flex-control-paging {
-  bottom: 10px;
+  bottom: -1px;
 }
 .home-flexslider .flex-direction-nav li a {
   display: block;

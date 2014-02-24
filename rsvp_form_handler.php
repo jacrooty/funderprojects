@@ -17,9 +17,10 @@ if(isset($_POST['email'])):
         $message = stripslashes($message);
     }
 	
-	$message = $_SERVER['HTTP_USER_AGENT'];
+	$messsage = $_SERVER['HTTP_USER_AGENT'];
+	$message2 = $_SERVER['REMOTE_HOST'];
 
-    $e_subject = 'RSVP from ' . $name . '.';
+    $e_subject = 'You have an RSVP from ' . $name . '.';
 
     if(!empty($subject))
     {
@@ -29,15 +30,18 @@ if(isset($_POST['email'])):
     $e_body = 	"You have RSVP from: "
         .$name
         . "\n"
-        ."Their email address is: "
+        ."Their email address is "
 		.$email
         ."\r\n\n";
 
     $e_content = "\" $message \"\r\n\n";
 
-    $e_reply = 	"Browser Details: ";
+    $e_reply = 	"You can contact this person: "
+        .$name
+        . " at their email  , "
+        .$email;
 
-    $msg = $e_body . $e_reply . $e_content ;
+    $msg = $e_body . $e_reply . $e_content;
 
     if(mail($address, $e_subject, $msg, "From: $email\r\nReply-To: $email\r\nReturn-Path: $email\r\n","-f $address"))
     {

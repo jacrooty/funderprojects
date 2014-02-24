@@ -123,6 +123,8 @@
                     </ul>
 
                 </div><!-- End Slider -->
+				<p style="padding-top:10px;padding-left:10px;color:white;font-size:11px;">Thanks to Benefunder's Gold Sponsor:</p>
+				 <img style="display:block;margin-left:auto;margin-right:auto;" alt="Innovation Showcase" src="images/MintzLevin.png">
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-12 header-widget">
@@ -132,7 +134,7 @@
                     <div class="slide_widget_inner">
                         <h3 class="title">Please join us for an intimate gathering on <span class="dateo"> Thursday, Feb 6th, 2014 from 5-7pm.</span></h3>
                         <div class="textwidget">
-                            Don’t miss your opportunity to become a leader in game-changing philanthropy and to support ground-breaking research!.
+                            Don’t miss your opportunity to become a leader in game-changing philanthropy and to support ground-breaking research!
                         </div>
                         <div class="wp-email-capture wp-email-capture-widget wp-email-capture-widget-worldwide" id="wp_email_capture">
                            <form class="contact-form" method="post" action="rsvp_form_handler.php">
@@ -142,7 +144,7 @@
 		                           <input type="text" name="email" id="email" class="email required" title="* Please provide a valid email address" placeholder="Email Address">								   
 		                           <input type="submit" value="RSVP" id="submit" class="pp-btn" name="submit">
 		                           <input type="hidden" name="action" value="send_message">
-		                           <input type="hidden" name="target" value="jchristopher@pushinginnovation.com">
+		                           <input type="hidden" name="target" value="ebuss@pushinginnovation.com">
                             </form>
 						</p>
 					
@@ -180,7 +182,23 @@
             <h3>Showcase Event</h3>
 			<p>Please join us for an intimate gathering at a luxurious private estate in beautiful La Jolla. Be among the first to hear about cutting-edge research happening right here in San Diego. Don’t miss your opportunity to become a leader in game-changing philanthropy and to support ground-breaking research!</p>
             <p>Enjoy catered hors d'oeuvres and cocktails while networking with like-minded business, philanthropic, and community leaders</p>
-        </div>
+			<hr>
+			<div class="goocal">
+			<img style="display:block;margin-left:auto;margin-right:auto;" src="images/google_logo_black.jpg" alt="Google">
+            <p>Need a Reminder? Add this event to your Google Calendar by clicking on the button below:</p>		
+<a target="_blank" <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Benefunder%20Innovation%20Showcase&dates=20140207T010000Z/20140207T030000Z&details=Join%20us%20for%20an%20intimate%20gathering%20at%20a%20luxurious%20private%20estate%20in%20beautiful%20La%20Jolla.%20Be%20among%20the%20first%20to%20hear%20about%20cutting-edge%20research%20happening%20right%20here%20in%20San%20Diego.%20&location=1660%20Torrey%20Pines%20Road%2C%20San%20Diego%2C%20CA%2092037&trp=false&sprop=Innovation%20Press&sprop=name:www.innovationpress.org" target="_blank"><img border="0" src="images/calbutton.png"></a>
+
+
+<br><br><br>
+
+<button type="button" class="btn btn-danger btn-lg">
+  <span class="glyphicon glyphicon-pushpin"></span> Add Event to Calendar</button>
+
+
+		</div>
+
+		</div>
+
 
         <div class="col-lg-6 col-md-6 col-sm-6">
             <h3>Event Venue</h3>
@@ -224,10 +242,10 @@
               <h3>Our Awesome Sponsors</h3>
                     <ul>
 						<li class="spon"><span class="glyphicon glyphicon-star-empty"></span>&nbsp;CONNECT</li>
-						<li class="spon"><span class="glyphicon glyphicon-star-empty"></span>&nbsp;Local Magazine</li>
+						<li class="spon"><span class="glyphicon glyphicon-star-empty"></span>&nbsp;Locale Magazine</li>
 						<li class="spon"><span class="glyphicon glyphicon-star-empty"></span>&nbsp;Merrill Lynch</li>
 						<li class="spon"><span class="glyphicon glyphicon-star-empty"></span>&nbsp;619Vodka</li>
-						<li class="spon"><span class="glyphicon glyphicon-star-empty"></span>&nbsp;Sothebys Pacific International</li>
+						<li class="spon"><span class="glyphicon glyphicon-star-empty"></span>&nbsp;Pacific Sothebys International Realty</li>
 						<li class="spon"><span class="glyphicon glyphicon-star-empty"></span>&nbsp;San Diego Ferrari/Maserati</li>
 					</ul>
                 </div>
@@ -262,12 +280,6 @@
 <script src="js/respond.min.js"></script>
 <![endif]-->
 
-<script>
-function myFunction()
-{
-document.getElementById("message").innerHTML = "Processing...";
-}
-</script>
 
 
 <script src="js/jquery.min.js"></script>
@@ -284,8 +296,11 @@ document.getElementById("message").innerHTML = "Processing...";
 <script src="js/custom.js"></script>
 
 <script>
+	$( '#name' ).val( '' );
+	$( '#email' ).val( '' );
+
 	$( 'form.contact-form' ).on( 'submit', function() {
-		$('#submit').text( 'Processing...' );
+		$('#submit').prop("disabled", true).val( 'Processing...' );
 	});
 </script>
 
