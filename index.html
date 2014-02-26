@@ -5,6 +5,8 @@
 <!--[if gt IE 8]><!--> <html> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
+	<meta http-equiv="Expires" content="Mon, 10 March 2014 05:00:00 GMT">
+	<meta http-equiv="Pragma" content="no-cache">
 
     <title>Benefunder Events</title>
 
@@ -35,10 +37,8 @@
     <!-- Political press has 4 skins, but you can use only one of them -->
     <link href="css/skins/default.css" rel="stylesheet" media="all">
 
-    <!--<link href="css/skins/dark-red.css" rel="stylesheet" media="all">
-    <link href="css/skins/lighter-green.css" rel="stylesheet" media="all">
-    <link href="css/skins/rich-blue.css" rel="stylesheet" media="all">-->
-
+    <!-- Another point to force refresh -->
+ 	<link rel="stylesheet" href="css/main.css?ver=1.2" media="screen" /> 
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -58,7 +58,7 @@
     <header role="banner" class="header container">
 
         <div class="donate-now clearfix">
-            <a target="_blank" title="Donate Now" href="#">RSVP Now!</a>
+            <a target="_blank" title="RSVP Now" onclick="return reloadPage()" href="http://www.innovationpress.org">RSVP Now!</a>
         </div>
 
         <!-- Start of Main Navigation -->
@@ -87,6 +87,8 @@
 <!-- .header-bottom-wrapper -->
 <div class="header-bottom-wrapper">
     <div class="container">
+
+
 
         <!-- .quote -->
         <div class="quote">
@@ -280,6 +282,15 @@
 <script src="js/respond.min.js"></script>
 <![endif]-->
 
+
+<script>
+function reloadPage()  {
+
+location.reload(forceGet);
+return true;
+
+}
+</script>
 
 
 <script src="js/jquery.min.js"></script>
