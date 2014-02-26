@@ -1,2 +1,64 @@
-<!-- SHTML Wrapper - 404 Not Found -->
-<!--#exec cgi="/cgi-sys/fourohfour.cgi" -->
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Octopus - Error Page Template</title>
+    <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:700' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" media="screen" type="text/css" href="404style.css" />
+	<!--[if lte IE 7]><link rel="stylesheet" media="screen" type="text/css" href="css/ie.css" /><![endif]-->
+</head>
+<body>
+	<!-- Sky & Sea Background -->
+	<div id="sky-bg"></div>
+	<div id="clouds">
+        <img src="images/cloud1.png" class="cloud1" alt="cloud" data-speed="8"/>
+        <img src="images/cloud3.png" class="cloud3" alt="cloud" data-speed="7" />
+        <img src="images/cloud2.png" class="cloud2" alt="cloud" data-speed="9"/>
+        <img src="images/cloud4.png" class="cloud4" alt="cloud" data-speed="10"/>
+	</div>
+	<div id="background-shells"><div></div></div>
+    <!-- Start of Page Elements -->
+    <div id="main">    	
+        <div class="container">
+            <div id="sun"><img src="images/sun.png" alt="sun" /></div>
+            <!-- Start of Bubble Text-->
+			<div class="bubble-text-container">
+				<div class="wrapper">
+					<p class="bubble-text"><noscript>I Think<br/>I'm lost!</noscript></p>
+				</div>
+			</div>
+            <!-- End of Bubble Text--> 
+            <div class="content">
+			
+            	<!-- Start of Error Text -->
+                <div class="error-container">
+                    <h1>404</h1>
+                    <p>oops!</p>
+                </div>
+                <!-- End of Error Text -->
+      
+            </div>
+            
+            <div class="clear"></div>
+        </div>
+    </div>
+	<!-- End of Page Elements -->
+
+    <!-- Start Of Javascript code -->
+	<script type="text/javascript">
+		// Feel free to change default settings here
+		var bubbleMsg = ["I Think<br/>I'm lost!", "Where am i?!", "My mom left me here", 
+						 "Why! :(", "Whats that five legged thing?", 
+						 "Why are you smiling?", "Get lost!", "Best to navigate back",
+						 "Lets try it", "Finally!", "I'm outta here xD"
+                        ],//Bubble messages to show
+			bubbleMsgSpeed = 3000;//Time between changing bubble text messages (in milliseconds)
+	</script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" ></script>
+    <!--[if IE]><script type="text/javascript" src="scripts/excanvas.compiled.js" ></script><![endif]-->
+    <script type="text/javascript" src="scripts/custom.js"></script> 
+    <!-- End Of Javascript code -->
+	
+</body>
+</html>

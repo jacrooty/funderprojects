@@ -1,0 +1,22 @@
+/*-----------------------------------------------------------------------------------
+
+	Theme Name: Octopus
+	Theme URI: http://www.sacredpixel.com
+	Description: Octopus error template 
+	Author: PixFlow (http://themeforest.net/user/PixFlow)
+	Author URI: http://www.sacredpixel.com
+
+	Internet explorer specific styles
+-------------------------------------------------------------------------------------*/
+
+.bubble-text-container .wrapper
+{
+	position: absolute;
+	top: 50%;
+}
+  
+.bubble-text
+{
+	position: relative;
+	top: -50%;
+}
