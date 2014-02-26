@@ -287,16 +287,6 @@
 <![endif]-->
 
 
-<script>
-function reloadPage()  {
-
-location.reload(forceGet);
-return true;
-
-}
-</script>
-
-
 <script src="js/jquery.min.js"></script>
 <script src="js/flexslider/jquery.flexslider-min.js"></script>
 <script src="js/swipebox/jquery.swipebox.min.js"></script>
@@ -317,6 +307,23 @@ return true;
 	$( 'form.contact-form' ).on( 'submit', function() {
 		$('#submit').prop("disabled", true).val( 'Processing...' );
 	});
+	
+	
+	function reloadPage()  {
+
+	location.reload(forceGet);
+	return true;
+
+	}
+
+	function ReloadPage() { 
+	   location.reload();
+	};
+
+	$(document).ready(function() {
+	  setTimeout("ReloadPage()", 10000); .
+	});
+	
 </script>
 
 
