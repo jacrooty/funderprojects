@@ -148,15 +148,19 @@
                             Don’t miss your opportunity to become a leader in game-changing philanthropy and to support ground-breaking research!
                         </div>
                         <div class="wp-email-capture wp-email-capture-widget wp-email-capture-widget-worldwide" id="wp_email_capture">
-                           <form class="contact-form" method="post" action="rsvp_form_handler.php">
+                          		<form  name="signupForm" id="signupForm" class="contact-form" method="post" action="http://app.greenrope.com/j1.pl?4d50a194bfc0f4ffc8c6319ec64da5e9832a6ca31cb49fd49595a5f189114084" onsubmit="return checkMandatory();" >
 
-							   <p>
-		                           <input type="text" name="name" id="name" class="required" title="* Please provide your name" placeholder="Full Name">
-		                           <input type="text" name="email" id="email" class="email required" title="* Please provide a valid email address" placeholder="Email Address">
-		                           <input type="submit" value="RSVP" id="submit" class="pp-btn" name="submit">
-		                           <input type="hidden" name="action" value="send_message">
-		                           <input type="hidden" name="target" value="events@benefunder.org">
-                            </form>
+									   <p>
+								             <input type="hidden" name="AutomaticTeamIDs" value="1" /> 
+											<input type="text" name="FullName" value="" maxlength="64" id="signup_FullName" class="inputTextField" />
+											<input type="text" name="Email" maxlength="64" value="" id="signup_Email" class="inputTextField" />
+
+											<input type="hidden" name="Referrer" value="" /> 
+											<input type="hidden" name="qstring" value="4d50a194bfc0f4ffc8c6319ec64da5e9832a6ca31cb49fd49595a5f189114084" /> 
+											<input type="hidden" name="formSubmitCheck" value="1" /> 
+										   <input type="submit" value="RSVP" id="submit" class="pp-btn" name="submit">
+
+								    </form>
 						</p>
 					
                         </div>
